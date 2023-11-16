@@ -558,3 +558,28 @@ letter-spacing: -1px;
     padding: 0;
     max-width: 400px;
 }
+.kaleb
+{
+    background: url(./img/light/unsplash_wHJ5L9KGTl4.svg), lightgray 50% / cover no-repeat;
+}
+.kale{
+    color: var(--White, #FFF);
+text-align: center;
+font-family: Poppins;
+font-size: 48px;
+font-style: normal;
+font-weight: 600;
+line-height: 105%; /* 50.4px */
+letter-spacing: -2.4px;
+}
+
+.working{
+    color: var(--White, #FFF);
+text-align: center;
+font-family: Poppins;
+font-size: 48px;
+font-style: italic;
+font-weight: 700;
+line-height: 105%; /* 50.4px */
+letter-spacing: -2.4px;
+}
