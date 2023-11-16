@@ -1,0 +1,262 @@
+@import url(reset.css);
+
+body{
+    background: black;
+}
+button{
+    width: 30px;
+    background-color: #000;
+}
+.wrapper {
+    
+    margin: 0;
+  }
+  
+    .wrapp{
+      max-width: 1920px; 
+        
+  
+    }
+     .wrapcontainer {
+      max-width: 1920px;
+      margin: 0 auto;
+      margin-left: 192px;
+      margin-right: 192px;
+  
+    } 
+     @media (max-width: 797px) {
+      .wrapcontainer{
+          margin-left: 0;
+          margin-right: 0px;
+      }
+  .posts, .text, h3, .LOREM p{
+    margin-left: 10px;
+    margin-right: 10px;
+  
+  }
+  h5{
+    padding-top: 20px;
+  }
+  .call{
+    height: 500px;
+  }
+  .footlogo ul {
+    display: flex;
+    justify-content: space-between !important;
+    gap: 10px !important;
+  }
+  .blog{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;  
+  
+  }
+      .home{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+  
+      }
+  .saly{
+      max-width: 270px;
+  } 
+   } 
+  .call{
+    height: 580px;
+  }
+    .head {
+  padding-top: 10px;
+      display: flex;
+      gap: 31px;
+      margin-bottom: 10px;
+      justify-content: space-between;
+      align-items: center;
+  
+    }
+    .headerhr{
+      border-top: 1px solid #F3F4F6;
+  
+  border-bottom: 1px solid #F3F4F6;
+  
+  opacity: 0.25;
+  
+    }
+  
+  
+     .btnsterted{
+      display: flex;
+      margin-left: 24px;
+    }
+    .btnsterted2{
+      display: flex;
+      justify-content: center;
+    }
+    .btnstarted3{
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 24px;
+    } 
+    .headerlogo {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+   
+  
+    .list {
+      display: flex;
+      color: #000;
+      font-size: 16px;
+      font-weight: 400;
+      padding-left: 30px;
+      gap: 44px;
+  
+    }
+  
+    .list li{
+      padding-top: 12px;
+    }
+    .navbar input {
+      display: none;
+    }
+    @media (max-width: 991px) {
+      .list {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.10);
+  
+  backdrop-filter: blur(7.5px);
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        left: 0px;
+        top: 52px;
+        transition: 0.4s ease-in-out;
+        box-shadow: 0px 8px 26px 1px rgba(0, 0, 0, 0.50);
+      }
+  
+  
+  }
+    .list li a {
+      cursor: pointer;
+      color: #424242;
+    }
+     @media (max-width: 991px) {
+      .list li a{
+        color: #000;
+  padding: 0;
+  
+        font-size: 32px;
+        font-weight: 400;
+          display: flex;
+          justify-content: center;
+        }
+        .list li .first:first-of-type{
+            color: #000;
+          font-size: 30px;
+          font-weight: 700; 
+        }
+        .but{
+          display: flex;
+          border-radius: 9999px;
+  opacity: 0.75;
+  background: #FFF;
+  justify-content: center;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+      max-width: 110px;
+      height: 40px;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          align-items: center;
+          color: #1F2937;
+  
+          margin-left: 85px;
+      }
+      .butli a{
+        font-size: 16px !important;
+  
+      }
+     
+  }
+  .spanb{
+    color: #9D174D;
+  }
+    .list li a:hover,
+    .list li a:active 
+      {
+      color: #000;
+      font-weight: 600;
+      transition: all 0.5s ease-in-out ;
+    }
+  
+    @media (max-width: 991px) {
+       .list li a:active,
+    .list li a:hover{
+      color: black;
+      font-weight: 600;
+      transition: all 0.3s ;
+    } 
+    .navbar input {
+      display: none;
+    }
+  } 
+  .myburger input {
+      display: none;
+    }  
+    .myburger {
+      display: none;
+      position: relative;
+      background: transparent;
+      cursor: pointer;
+      height: 20px;
+      width: 26px;
+    }
+    @media (max-width: 991px) {
+      .myburger {
+         display: block;
+       }
+       .but1{
+        align-items: center;
+        margin: 0 auto;
+       }
+      }
+    
+    .spanb {
+      display: block;
+      position: absolute;
+      background: #424242;
+      border-radius: 10px;
+      height: 2px;
+      width: 25px;
+    }
+
+    .spanb:nth-child(1) {
+      top: 0%;
+    }
+    
+    .spanb:nth-child(2) {
+      top: 50%;
+    }
+    
+    .spanb:nth-child(3) {
+      top: 100%;
+    }
+      input:checked ~ .list {
+      padding-top: 80px;
+      height: 530px;
+      
+    }
+    input:checked ~ .myburger .spanb:nth-child(1) {
+      transform: rotate(40deg);
+      left: 3px;
+      top: -3px; 
+     
+    }
+
+
+
+
+.productdes{
+    color:  #FFF;
+}
