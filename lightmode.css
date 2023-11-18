@@ -22,43 +22,7 @@ button{
 
   
     } 
-     @media (max-width: 797px) {
-      .wrapcontainer{
-          margin-left: 0;
-          margin-right: 0px;
-      }
-  .posts, .text, h3, .LOREM p{
-    margin-left: 10px;
-    margin-right: 10px;
-  
-  }
-  h5{
-    padding-top: 20px;
-  }
-  .call{
-    height: 500px;
-  }
-  .footlogo ul {
-    display: flex;
-    justify-content: space-between !important;
-    gap: 10px !important;
-  }
-  .blog{
-      display: flex;
-      justify-content: center;
-      flex-direction: column;  
-  
-  }
-      .home{
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-  
-      }
-  .saly{
-      max-width: 270px;
-  } 
-   } 
+    
   .call{
     height: 580px;
   }
@@ -740,11 +704,55 @@ margin-right: 0px !important;
 .footdiv{
   background: var(--main-colors-purple-4, #A87FF3);
 border-radius: 15px;
-margin-bottom: 63px;
-height: 180px;
+width: 100%;
+max-height: 180px;
+max-width: 1200px;
+margin: 0 auto;
+margin-top: 250px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+position: relative;
+margin-bottom: -85px;
+}
+.im{
+  float: left;
+  position: relative;
+  
+}
+.footdiv p{
+  color: #FFF;
+
+/* H3/Gotham/Bold/Active/Center-Left */
+font-family: Gotham;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 22px */
+letter-spacing: -1.1px;
+text-align: center;
+max-width: 470px;
 }
 
+.footermenu{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.listfooter li a{
+  color: #fff;
+}
+.listfooter {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Gotham', sans-serif;
 
+}
 @media (max-width: 991px) {
 
 .es, .star{
@@ -845,11 +853,23 @@ height: 180px;
     max-width: 854px;
   }
 }
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
 
     .portfolioall {
       gap: 10px;
     }
+} */@media (max-width: 1024px) {
+  .ux{
+    max-width: 100%;
+  }
+  .design{
+    max-width: 1020px;
+
+  }
+  .px{
+        margin-left: 15px;
+    margin-right: 15px;
+  }
 }
 @media (max-width: 991px) {
 
@@ -868,20 +888,51 @@ margin-left: 15px;
  }
 }
 
-@media (max-width: 1024px) {
-  .ux{
-    max-width: 100%;
-  }
-  .design{
-    max-width: 1020px;
 
+ @media (max-width: 797px) {
+      .wrapcontainer{
+          margin-left: 0;
+          margin-right: 0px;
+      }
+  .posts, .text, h3, .LOREM p {
+    margin-left: 10px;
+    margin-right: 10px;
+  
   }
-  .px{
-        margin-left: 15px;
-    margin-right: 15px;
+  .LOREM p, .LOREMM p, .pro, .colom{
+    font-size: 25px;
   }
-}
-
+  .lorem{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h5{
+    padding-top: 20px;
+  }
+  .call{
+    height: 500px;
+  }
+  .footlogo ul {
+    display: flex;
+    justify-content: space-between !important;
+    gap: 10px !important;
+  }
+  .blog{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;  
+  
+  }
+      .home{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+  
+      }
+  .saly{
+      max-width: 270px;
+  } 
+   } 
 @media (max-width: 797px) {
 
   .productdes{
@@ -1016,6 +1067,7 @@ font-weight: 500 !important;
 .portfolioall{
  gap: 5px; 
 }
+
 
 }
 
