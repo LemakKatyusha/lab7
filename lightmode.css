@@ -22,10 +22,12 @@ button{
 
   
     } 
-    
-  .call{
-    height: 580px;
-  }
+    @media (max-width: 797px) {
+      .wrapcontainer{
+          margin-left: 0;
+          margin-right: 0px;
+      }}  
+
     .head {
   padding-top: 10px;
       display: flex;
@@ -633,7 +635,7 @@ margin-top: 15px;
   margin-left: 72px;
   max-width: 600px;
 }
-.lorem{
+.lorem, .loremdark{
   color: var(--main-colors-gray-3, #464646);
 /* H1/Gotham/Black/Active/Center-Left */
 font-family: Gotham ;
@@ -705,8 +707,8 @@ margin-right: 0px !important;
   background: var(--main-colors-purple-4, #A87FF3);
 border-radius: 15px;
 width: 100%;
-max-height: 180px;
-max-width: 1200px;
+max-height: 130px;
+max-width: 1068px;
 margin: 0 auto;
 margin-top: 250px;
 display: flex;
@@ -716,9 +718,11 @@ position: relative;
 margin-bottom: -85px;
 }
 .im{
-  float: left;
-  position: relative;
-  
+  display: flex;
+  margin-left: -300px;
+  margin-bottom: 170px;
+  max-height: 300px;  position: relative;
+
 }
 .footdiv p{
   color: #FFF;
@@ -734,10 +738,13 @@ text-align: center;
 max-width: 470px;
 }
 
-.footermenu{
+.footall{
   display: flex;
   justify-content: space-between;
   text-align: center;
+  padding-top: 120px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .listfooter li a{
   color: #fff;
@@ -751,7 +758,7 @@ max-width: 470px;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Gotham', sans-serif;
-
+gap: 30px;
 }
 @media (max-width: 991px) {
 
@@ -870,15 +877,37 @@ max-width: 470px;
         margin-left: 15px;
     margin-right: 15px;
   }
+
+
+
+
+
+
+.productdes{
+  font-size: 170px;
+}
+.green{
+  max-width: 970px;
+}
+.greentwo{
+  padding-left: 5px;
+  gap: 5px;
+}
+.text1{
+  font-size: 65px;
+}
+.text2{
+  font-size: 40px;
+}
 }
 @media (max-width: 991px) {
 
-  .portfolioall{
-    grid-template-columns: repeat(2, 1fr);
+   .portfolioall{
+    /* grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-max-width: 500px;
+max-width: 600px; */
 margin-left: 15px; 
- }
+ } 
 
  .text1{
   font-size: 70px !important;
@@ -894,15 +923,16 @@ margin-left: 15px;
           margin-left: 0;
           margin-right: 0px;
       }
-  .posts, .text, h3, .LOREM p {
+  .posts, .text, h3, .LOREM p, .LOREMdark p {
     margin-left: 10px;
     margin-right: 10px;
   
   }
-  .LOREM p, .LOREMM p, .pro, .colom{
+  .LOREM p, .LOREMM p, .pro, .colom, .LOREMdark p{
     font-size: 25px;
   }
-  .lorem{
+
+  .lorem, .loremdark{
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -995,7 +1025,26 @@ margin-right: 15px; }
   margin-top: 20px;
 }
   .portfolioall, .portfolioalldark {
-    width: 100%;
+    width: 95%;
+  }
+  .portcarts{
+    max-width: 96%;
+  }
+  .img2{
+    max-width: 70px;
+    margin-top: -70px;  }
+  .im{
+    display: flex;
+    position: relative;
+    margin-left: -25px;
+    max-width: 170px;
+    margin-bottom: 110px;
+  }
+  .footdiv p {
+    font-size: 12px;
+  }
+  .img1{
+    display: none;
   }
 .px{
   margin-left: 0;
@@ -1061,7 +1110,26 @@ font-weight: 500 !important;
   margin-left: 15px;
   margin-right: 15px;
 }
+.footdiv{
+  max-width: 760px;
 
+}
+.img2{
+  max-width: 70px;
+  margin-top: -70px;
+}
+.footall{
+  display: flex;
+  flex-direction: column;
+}
+.listfooter{
+  gap: 15px;
+  margin: 0 ;
+  padding-top: 20px;
+}
+.listfooter li a {
+  font-size: 14px;
+}
 }
 @media (max-width: 600px) {
 .portfolioall{
