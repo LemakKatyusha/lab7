@@ -5,7 +5,7 @@
 button{
   position: relative;
   display: inline-block;
-  background-color: #292929;
+  background-color: #292926;
     width: 80px;
     font-size: 20px;
     height: 40px;
@@ -13,6 +13,9 @@ button{
     color: #FFF;
     font-family: 'Gotham';
 
+}
+.butli a{
+  color: #FFF;
 }
 .logodark{
 display: none;
@@ -57,7 +60,7 @@ display: none;
     text-align: center;
     align-items: center;
   }
-  .but a{
+  .but{
     color: #FFF !important;
   }
     .list {
